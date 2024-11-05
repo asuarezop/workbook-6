@@ -20,8 +20,15 @@ public class MainApp {
         Collections.sort(people);
         Collections.reverse(people);
 
-        for (Person p: people) {
-            System.out.println(p);
-        }
+//        people.sort(new PersonLastNameComparator());
+//
+//        for (Person p: people) {
+//            System.out.println(p);
+//        }
+
+        people.sort(new PersonAgeComparator());
+        //Alternative to writing for loop for printing out every person
+        people.forEach(new PeoplePrinter()); //forEach takes a new instance of Consumer() and prints each person
+        people.forEach(System.out::println); //above implementation using a Functional Interface lambda expression
     }
 }
