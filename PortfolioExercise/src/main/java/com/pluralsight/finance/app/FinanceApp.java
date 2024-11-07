@@ -1,6 +1,7 @@
 package com.pluralsight.finance.app;
 
 import com.pluralsight.finance.models.BankAccount;
+import com.pluralsight.finance.models.Jewelry;
 import com.pluralsight.finance.models.Valuable;
 
 public class FinanceApp {
@@ -9,4 +10,6 @@ public class FinanceApp {
 
 //    account1.deposit(100);
 //    account2.deposit(100);
+
+    Jewelry diamond = new Jewelry("Sapphire Blue", 12000, 45);
 }
